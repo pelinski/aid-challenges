@@ -7,7 +7,7 @@
 import processing.sound.*;
 
 // Declare the sound source and FFT analyzer variables
-SoundFile sample;
+AudioIn in;
 FFT fft;
 
 // Define how many FFT bands to use (this needs to be a power of two)
@@ -37,12 +37,12 @@ public void setup() {
   barWidth = width/float(bands);
 
   // Load and play a soundfile and loop it.
-  sample = new SoundFile(this, "beat.aiff");
-  sample.loop();
+ in = new AudioIn(this, 0);  
+ in.start();
 
   // Create the FFT analyzer and connect the playing soundfile to it.
   fft = new FFT(this, bands);
-  fft.input(sample);
+  fft.input(in);
 }
 
 public void draw() {
