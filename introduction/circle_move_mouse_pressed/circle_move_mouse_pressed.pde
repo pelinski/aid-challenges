@@ -14,3 +14,10 @@ void draw() {
   }
   circle(mX, mY, radius);
 }
+
+/* 
+void mouseDragged() {
+  mX = mouseX;
+  mY = mouseY;
+}
+*/
