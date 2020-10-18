@@ -51,7 +51,6 @@ void loop()
 }
 
 int modFrequency(int f){
-  // map the sensor reading to a range for the
-  // speaker
+  // map the sensor reading to a range for the speaker
   return (f * pow(2.0, (constrain(int(map(sensorReading, 0, 1023, 36, 84)), 35, 127) - 57) / 12.0));
 }
