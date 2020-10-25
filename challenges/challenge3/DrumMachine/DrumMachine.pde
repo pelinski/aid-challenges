@@ -177,20 +177,19 @@ void mousePressed()
 void oscEvent(OscMessage msg) {
   addr = split(msg.addrPattern().toString()+"/" ,"/");
   
- if(addr[1].equals("beat")) { 
+  if(addr[1].equals("beat")) { 
       int on = int(msg.get(0).floatValue());
       int row = int(addr[2]);
       int beat = int(addr[3]);
       if (row == 3) hatRow[beat-1] = boolean(on);
       if (row == 2) snrRow[beat-1] = boolean(on);
       if (row == 1) kikRow[beat-1] = boolean(on);
-      
       //println( "on:",on, " row:",row," beat:",beat);
- }
+  }
 
-if (addr[1].equals("bpm")){
- int newBpm = round(msg.get(0).floatValue());
- if (newBpm != 0) bpm=newBpm;
-}
+  if (addr[1].equals("bpm")){
+   int newBpm = round(msg.get(0).floatValue());
+   if (newBpm != 0) bpm=newBpm;
+  }
   
 }
