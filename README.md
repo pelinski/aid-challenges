@@ -5,3 +5,4 @@
 + **Challenge 3:** _OSC control/Processing_. DrumMachine/sampler controlled via TouchOSC (phone).
 + **Challenge 4:** _RunwayML + Wekinator/OSC/Processing_. Face detection via RunwayML, extract lips contour, use as wekinator input for training a model for a FM synth.
 
+![Slides](challenges/challenge4/images/slides.jpeg) 
