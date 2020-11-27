@@ -6,3 +6,6 @@
 + **Challenge 4:** _RunwayML + Wekinator/OSC/Processing_. Face detection via RunwayML, extract lips contour, use as wekinator input for training a model for a FM synth.
 
 ![Slides](challenges/challenge4/images/slides.jpeg) 
+
+## Final project (in progress)
+can be found [Here](https://github.com/gonski/wekitunenator)
