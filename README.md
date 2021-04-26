@@ -7,5 +7,5 @@
 
 ![Slides](challenges/challenge4/images/slides.jpeg) 
 
-## Final project (in progress)
+## Final project
 can be found [Here](https://github.com/gonski/wekitunenator)
